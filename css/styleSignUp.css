@@ -1,0 +1,390 @@
+:root {
+    --bg: #f0f2f5;
+    --card: #fff;
+    --facebook-blue: #1877f2;
+    --green: #42b72a;
+    --muted: #606770;
+    --footer-bg: #ffffff;
+}
+
+
+html,
+body {
+    height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    background: var(--bg);
+    color: #1c1e21;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.page {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0px 20px 20px;
+    display: flex;
+    justify-content: center;
+    flex: 1 0 auto;
+}
+
+.signup-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 280px;
+    height: auto;
+}
+
+.signup-card {
+    background: var(--card);
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 396px;
+}
+
+.signup-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.signup-card h2 {
+    margin: 0;
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.signup-card .sub {
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 24px;
+    margin: 0;
+}
+
+.line {
+    border-top: 1px solid #ccd0d5;
+    margin: 20px -16px;
+}
+
+.name-row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.name-row input {
+    flex: 1;
+    font-size: 15px;
+    padding: 11px;
+    border-radius: 5px;
+    border: 1px solid #ccd0d5;
+    width: 100%;
+}
+
+.form-row {
+    margin-bottom: 10px;
+}
+
+.label {
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: normal;
+    margin-bottom: 4px;
+    display: block;
+}
+
+.info-icon {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 1px solid var(--muted);
+    border-radius: 50%;
+    font-style: normal;
+    font-size: 11px;
+    line-height: 12px;
+    text-align: center;
+    color: var(--muted);
+    margin-left: 4px;
+}
+
+.dob-row {
+    display: flex;
+    gap: 10px;
+}
+
+.dob-row select {
+    flex: 1;
+    padding: 8px;
+    font-size: 15px;
+    border: 1px solid #ccd0d5;
+    border-radius: 4px;
+    background: white;
+}
+
+.gender-row {
+    display: flex;
+    gap: 10px;
+}
+
+.radio-item {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 10px;
+    border: 1px solid #ccd0d5;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.radio-item input[type="radio"] {
+    margin-left: 8px;
+}
+
+.custom-gender {
+    margin-top: 10px;
+}
+
+.custom-gender select,
+.custom-gender input,
+input[type="text"],
+input[type="password"] {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 11px;
+    font-size: 15px;
+    border: 1px solid #ccd0d5;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.pronoun-hint {
+    color: var(--muted);
+    font-size: 12px;
+    margin: -5px 0 8px;
+}
+
+.pronoun-select option:first-child {
+    color: var(--muted);
+}
+
+.note {
+    color: var(--muted);
+    font-size: 11px;
+    margin: 10px 0;
+}
+
+.info-link {
+    color: #385898;
+    text-decoration: none;
+}
+
+.info-link:hover {
+    text-decoration: underline;
+}
+
+.terms {
+    color: var(--muted);
+    font-size: 11px;
+    margin: 10px 0;
+}
+
+.terms a {
+    color: #385898;
+    text-decoration: none;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+.signup-button {
+    background: var(--green);
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 0;
+    width: 194px;
+    margin: 20px auto 10px;
+    display: block;
+    cursor: pointer;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.login-link a {
+    color: var(--facebook-blue);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.site-footer {
+    background: var(--footer-bg);
+    padding: 22px 10px;
+    font-size: 12px;
+    color: var(--muted);
+    position: relative;
+}
+
+.footer-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 4px 0;
+}
+
+.footer-row {
+    width: 100%;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.footer-langs {
+    text-align: left;
+    font-size: 12px;
+    color: var(--muted);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.footer-langs a {
+    color: #385898;
+    text-decoration: none;
+}
+
+.footer-langs a.current-lang {
+    color: #737373;
+}
+
+.footer-langs a:hover {
+    text-decoration: underline;
+}
+
+.footer-langs .plus-btn {
+    background-color: #f5f6f7;
+    border: 1px solid #ccd0d5;
+    padding: 0 8px;
+    font-weight: bold;
+    color: #4b4f56;
+}
+
+.footer-divider {
+    border: none;
+    border-top: 1px solid #dddfe2;
+    margin: 8px 0;
+}
+
+.footer-links {
+    text-align: left;
+    font-size: 12px;
+    color: var(--muted);
+    line-height: 1.4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap:3px;
+}
+
+.footer-links a {
+    color: #385898;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-row.small {
+    font-size: 11px;
+    color: var(--muted);
+    margin-top: 6px;
+}
+
+.copyright {
+    text-align: left;
+    color: var(--muted);
+    font-size: 11px;
+    margin-top: 12px;
+}
+
+.foot-item {
+    display: inline-block;
+    margin-right: 22px;
+    color: #385898;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.foot-item:hover,
+.foot-item:focus,
+.foot-item:focus-visible {
+    text-decoration: underline;
+    outline: none;
+}
+
+@media (max-width: 900px) {
+    .page {
+        padding-top: 0;
+    }
+
+    .signup-content {
+        padding-top: 20px;
+        width: 100%;
+    }
+
+    .signup-card {
+        width: 100%;
+        max-width: 432px;
+    }
+}
+
+@media (max-width: 500px) {
+    .gender-row {
+        flex-direction: column;
+    }
+    
+    .radio-item {
+        width: 100%;
+    }
+}
+
+@media (max-width:1000px) {
+    .foot-item {
+        margin-right: 10px;
+    }
+}
+
+/*kostumizacija sweet alerta*/
+.swal2-icon.swal2-success .swal2-success-ring {
+    border-color: #1877f2 !important;
+}
+
+.swal2-icon.swal2-success [class^='swal2-success-line'] {
+    background-color: #1877f2 !important;
+}
+
+.swal2-icon.swal2-error {
+    border-color: #1877f2 !important;
+}
+
+.swal2-icon.swal2-error [class^='swal2-x-mark-line'] {
+    background-color: #1877f2 !important;
+}
+
+.swal2-icon.swal2-info {
+    border-color: #1877f2 !important;
+    color: #1877f2 !important;
+}
