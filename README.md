@@ -58,11 +58,11 @@ Spodaj so **primerjave med dejanskimi Facebook stranmi in mojo repliko**.
 
 ## 🚀 Kako odpreti projekt
 
-1. Repozitorij preneseš ali kloniraš:
-   ```bash
-   git clone https://github.com/leonilc07/Obrazec2.git
-   ```
-2. Odpreš eno od HTML datotek v brskalniku:
+1. Repozitorij preneseš.
+
+2. Klikneš na link v repositoriju (v zgornjem desnem kotu).
+
+4. Odpreš eno od HTML datotek v brskalniku:
    - `index.html` za prvo prijavno stran,
    - `login.html` za drugo prijavno stran,
    - `signup.html` za stran za registracijo.
@@ -75,4 +75,5 @@ Ni potrebna dodatna namestitev – dovolj je sodoben spletni brskalnik.
 - posnemanje resnične znane spletne strani (Facebook),
 - izboljšanje znanja **HTML**, **CSS** in **JavaScripta**,
 - priprava projekta, ki ga lahko pokažem kot del svojega portfelja.
+
 
